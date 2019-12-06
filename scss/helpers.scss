@@ -1,0 +1,37 @@
+/* Utility Classes */
+
+small {
+  font-size: 0.75rem !important;
+}
+
+.text- {
+  &primary {
+    color: $primary;
+  }
+
+  &grey {
+    color: $grey;
+  }
+
+  &light-grey {
+    color: $light-grey;
+  }
+}
+
+.bg- {
+  &primary {
+    background-color: $primary;
+  }
+
+  &grey {
+    background-color: $grey;
+  }
+
+  &light-grey {
+    background-color: $light-grey;
+  }
+}
+
+.caps {
+  text-transform: uppercase;
+}
