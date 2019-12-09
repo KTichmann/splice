@@ -1,11 +1,38 @@
 footer {
-  .logo-container {
+  ul li {
+    margin: 1rem 0rem;
+  }
+  .footer-section {
+    margin: 2rem 0rem;
+    padding: 0rem 1rem 0rem 1rem;
+    border-left: 1px solid #e4e4e4;
+    img {
+      width: 14px;
+      margin-right: 0.5rem;
+    }
+  }
+  .social-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-
     img {
       margin-bottom: 1rem;
+    }
+    .social-icon {
+      padding: 0rem 0.3rem;
+    }
+  }
+
+  @include breakpoint(medium) {
+    max-width: 80% !important;
+
+    .social-container {
+      padding: 0rem 1rem 0rem 0rem;
+
+      .grid-x a img {
+        padding: 0rem 0.3rem;
+      }
     }
   }
 }
