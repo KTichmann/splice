@@ -1,0 +1,81 @@
+#advert-wrapper {
+  column-count: 2;
+  column-gap: 1rem;
+
+  .advert-item {
+    display: inline-block;
+    margin: 0 0 1rem;
+    width: 100%;
+    position: relative;
+    img {
+      width: 100%;
+    }
+    h2 {
+      line-height: 2.5rem;
+    }
+    .advert-content {
+      position: absolute;
+      color: $white;
+      width: 25rem;
+
+      .text-body {
+        font-size: 1.5rem;
+      }
+
+      &.thin {
+        width: 13rem;
+      }
+
+      p,
+      a {
+        font-size: 0.875rem;
+      }
+
+      .gifting {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+        img {
+          width: 1rem;
+        }
+        a {
+          text-decoration: underline;
+          margin: 0rem 0.5rem;
+        }
+      }
+    }
+    .bottom-right {
+      bottom: 1rem;
+      right: -5rem;
+    }
+    .top-left {
+      top: 1rem;
+      left: 3rem;
+    }
+    .middle-right {
+      top: 50%;
+      transform: translateY(-50%);
+      right: 3rem;
+    }
+    .bottom-left {
+      bottom: 1rem;
+      left: 3rem;
+    }
+  }
+  @include breakpoint(medium down) {
+    column-count: 1;
+  }
+  @include breakpoint(small only) {
+    .advert-content {
+      width: 13rem !important;
+    }
+    .bottom-right,
+    .top-left,
+    .bottom-left {
+      left: 50% !important;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+nav {
+  #toolbar-wrapper {
+    padding: 0.5rem;
+
+    .basket {
+      img {
+        margin-right: 0.4rem;
+      }
+    }
+  }
+
+  #mid-menu-wrapper {
+    padding: 0.5rem 0px;
+  }
+
+  #mobile-menu-wrapper .top-bar {
+    background-color: $light-grey;
+    padding: 1rem;
+  }
+
+  .input-group {
+    font-size: 1rem;
+    .input-group-label {
+      background-color: white;
+      border-left: none;
+      border-radius: 0px 100px 100px 0px !important;
+      padding: 15px 15px;
+    }
+    .input-group-field {
+      border-radius: 100px 0px 0px 100px !important;
+      border-right: none;
+      box-shadow: none;
+      padding: 25px 15px;
+    }
+  }
+
+  #mobile-menu {
+    padding: 1rem 1rem;
+    position: absolute;
+    z-index: 10000;
+    ul li a {
+      color: $primary;
+      text-align: center;
+    }
+  }
+
+  #main-menu-wrapper {
+    ul li a {
+      color: $white;
+    }
+  }
+
+  #search-bar {
+    position: absolute;
+    top: 29.6rem;
+    z-index: 1000;
+  }
+
+  #mobile-menu,
+  #search-bar {
+    background-color: $light-grey;
+    color: $grey;
+  }
+}
+
+.menu-icon::after {
+  background: $grey !important;
+  box-shadow: 0 7px 0 $grey, 0 14px 0 $grey !important;
+}

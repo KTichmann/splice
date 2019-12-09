@@ -3,11 +3,11 @@
 @import "settings";
 @import "foundation";
 @import "motion-ui";
-@import "components/index";
 
 @import "colours";
 @import "helpers";
 @import "typography";
+@import "components/index";
 
 // Global styles
 @include foundation-global-styles;

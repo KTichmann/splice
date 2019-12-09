@@ -15,12 +15,12 @@
       rel="stylesheet"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      href="https://fonts.googleapis.com/css?family=Average&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header>
+    <nav>
       <div class="bg-light-grey" id="toolbar-wrapper">
         <div class="grid-container">
           <div class="grid-x align-middle bg-light-grey">
@@ -40,8 +40,8 @@
                   <div class="cell small-6 medium-3 caps">
                     <small>Hi Jane Brown</small>
                   </div>
-                  <div class="cell medium-3 small-6 caps text-right">
-                    <small>Basket 0</small>
+                  <div class="cell medium-3 small-6 caps text-right basket">
+                    <img src="assets/basket.svg" /><small>Basket 0</small>
                   </div>
                 </div>
               </div>
@@ -108,7 +108,7 @@
         </div>
       </div>
 
-      <div class="hide-for-medium">
+      <div class="hide-for-medium" id="mobile-menu-wrapper">
         <div class="top-bar" data-hide-for="medium">
           <div data-responsive-toggle="mobile-menu">
             <button class="menu-icon" type="button" data-toggle></button>
@@ -120,27 +120,193 @@
             <i class="fa fa-search text-white" data-toggle></i>
           </div>
         </div>
-        <div class="cell auto" id="mobile-menu">
+        <div
+          class="cell auto"
+          id="mobile-menu"
+          data-animate="hinge-in-from-top hinge-out-from-top"
+        >
           <ul class="menu cell auto expanded vertical medium-horizontal">
             <li><a class="caps" href="#">Food</a></li>
-            <li><a class="caps" href="#">Two</a></li>
-            <li><a class="caps" href="#">Three</a></li>
-            <li><a class="caps" href="#">Four</a></li>
-            <li><a class="caps" href="#">Five</a></li>
-            <li><a class="caps" href="#">Six</a></li>
-            <li><a class="caps" href="#">Seven</a></li>
+            <li><a class="caps" href="#">Home</a></li>
+            <li><a class="caps" href="#">Gift</a></li>
+            <li><a class="caps" href="#">Catering</a></li>
+            <li><a class="caps" href="#">Recipes</a></li>
+            <li><a class="caps" href="#">Blog</a></li>
+            <li><a class="caps" href="#">Stories</a></li>
           </ul>
         </div>
-        <div id="search-bar" class="input-group">
+        <div
+          class="input-group ma-0"
+          id="search-bar"
+          data-animate="hinge-in-from-top hinge-out-from-top"
+        >
           <input
             class="input-group-field"
             type="text"
             placeholder="Search products"
           />
+          <span class="input-group-label">
+            <i class="fa fa-search text-grey"></i>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div
+        class="orbit"
+        id="headerCarousel"
+        role="region"
+        aria-label="Bakery Carousel"
+        data-orbit
+      >
+        <div class="orbit-wrapper">
+          <div class="orbit-controls">
+            <button class="orbit-previous">
+              <span class="show-for-sr">Previous Slide</span>
+              <img src="assets/arrowLeft.svg" />
+            </button>
+            <button class="orbit-next">
+              <span class="show-for-sr">Next Slide</span>
+              <img src="assets/arrowRight.svg" />
+            </button>
+          </div>
+          <ul class="orbit-container">
+            <li class="is-active orbit-slide">
+              <figure class="orbit-figure">
+                <div class="carousel-card">
+                  <p class="caps lined-text text-font-light">
+                    <span>Treat Yourself To</span>
+                  </p>
+                  <h2 class="caps text-primary">Local pantry favourites</h2>
+                  <p class="text-center">
+                    Buy two jams and get a third <span class="caps">free</span>
+                    <small>(T&C's apply)</small>
+                  </p>
+                  <button type="button" class="primary button caps text-bold">
+                    Shop Now
+                  </button>
+                </div>
+                <img
+                  class="orbit-image"
+                  src="assets/headerImage.jpg"
+                  alt="Space"
+                />
+              </figure>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
-
+    <div id="top-sellers-wrapper" class="grid-container">
+      <p class="lined-text">
+        <span
+          ><small class="caps text-bold text-font-light">Shop Our</small></span
+        >
+      </p>
+      <h2 class="text-center text-primary caps">Top Sellers</h2>
+      <div id="products-wrapper" class="grid-x grid-margin-x">
+        <div class="product cell medium-6 large-3">
+          <div class="product-img-wrapper">
+            <img src="assets/product1.jpg" alt="berry & balsamic bon bons" />
+            <span class="product-price bg-primary text-light-grey">R36.00</span>
+          </div>
+          <p class="caps product-title text-bold text-font-light">
+            Sweets, nuts & chocolates
+          </p>
+          <p class="product-description text-dark-grey text-bold">
+            Berry & Balsamic Bon Bons
+          </p>
+          <button class="caps button primary hollow text-bold">
+            Add to cart
+          </button>
+        </div>
+        <div class="product cell medium-6 large-3">
+          <div class="product-img-wrapper">
+            <img src="assets/product2.jpg" alt="berry & balsamic bon bons" />
+            <span class="product-price bg-primary text-light-grey">R72.00</span>
+          </div>
+          <p class="caps product-title text-bold text-font-light">
+            PASTA SAUCES & CONDIMENTS
+          </p>
+          <p class="product-description text-dark-grey text-bold">
+            Sundried Tomatoes, Feta & Bell Peppers
+          </p>
+          <button class="caps button primary hollow text-bold">
+            Add to cart
+          </button>
+        </div>
+        <div class="product cell medium-6 large-3">
+          <div class="product-img-wrapper">
+            <img src="assets/product3.jpg" alt="berry & balsamic bon bons" />
+            <span class="product-price bg-primary text-light-grey">R22.00</span>
+          </div>
+          <p class="caps product-title text-bold text-font-light">
+            SAVOURY SNACKS
+          </p>
+          <p class="product-description text-dark-grey text-bold">
+            Vegetable Crisps
+          </p>
+          <button class="caps button primary hollow text-bold">
+            Add to cart
+          </button>
+        </div>
+        <div class="product cell medium-6 large-3">
+          <div class="product-img-wrapper">
+            <img src="assets/product4.jpg" alt="berry & balsamic bon bons" />
+            <span class="product-price bg-primary text-light-grey"
+              >R292.00</span
+            >
+          </div>
+          <p class="caps product-title text-bold text-font-light">
+            HAMPERS
+          </p>
+          <p class="product-description text-dark-grey text-bold">
+            Melissa’s Family man
+          </p>
+          <button class="caps button primary hollow text-bold">
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="advert-wrapper">
+      <div class="advert-item">
+        <img src="assets/advert1.jpg" />
+        <h2 class="caps bottom-right advert-content">
+          YOUR PERFECT TEATIME TREAT
+        </h2>
+      </div>
+      <div class="advert-item">
+        <img src="assets/advert3.jpg" />
+        <div class="advert-content text-center middle-right thin">
+          <h2 class="caps text-primary">GIFTING MADE EASY</h2>
+          <p class="text-grey">
+            Beautiful product combinations to suit every occasion and budget.
+          </p>
+          <button type="button" class="button primary caps">
+            Shop Hampers
+          </button>
+          <div class="gifting">
+            <img src="assets/gifting.svg" />
+            <a class="text-dark-grey text-bold">Corporate gifting</a>
+          </div>
+        </div>
+      </div>
+      <div class="advert-item">
+        <img src="assets/advert2.jpg" />
+        <h2 class="caps advert-content top-left">
+          <span class="text-bold text-body">KITCHEN ESSENTIAL</span>
+          CERAMIC MUGS
+        </h2>
+      </div>
+      <div class="advert-item">
+        <img src="assets/advert4.jpg" />
+        <h2 class="caps advert-content bottom-left">
+          <span class="text-bold text-body">COMFORTING</span><br />
+          WINTER WARMERS
+        </h2>
+      </div>
+    </div>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>
     <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>

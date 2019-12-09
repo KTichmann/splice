@@ -1,0 +1,52 @@
+$carousel-height: 90vh;
+$carousel-height-mobile: 60vh;
+
+header {
+  #headerCarousel {
+    text-align: center;
+    height: $carousel-height;
+    .orbit-image {
+      height: $carousel-height;
+    }
+    .carousel-card {
+      background-color: $white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 2rem 4rem;
+      h2 {
+        font-size: 2.2rem;
+      }
+      .button {
+        width: auto;
+        text-align: center;
+        margin-bottom: 0rem;
+        padding: 1rem 4rem;
+      }
+      .lined-text {
+        width: 16rem;
+        margin: 0rem auto 1rem auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 64em) {
+  header {
+    #headerCarousel {
+      height: $carousel-height-mobile;
+      .orbit-image {
+        height: $carousel-height-mobile;
+      }
+      .carousel-card {
+        h2 {
+          font-size: 2rem;
+        }
+        button {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}

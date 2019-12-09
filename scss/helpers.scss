@@ -1,4 +1,6 @@
 /* Utility Classes */
+$button-padding: 1rem 2rem;
+$button-radius: 80px;
 
 small {
   font-size: 0.75rem !important;
@@ -15,6 +17,18 @@ small {
 
   &light-grey {
     color: $light-grey;
+  }
+
+  &dark-grey {
+    color: $dark-grey;
+  }
+
+  &font-light {
+    color: $font-light;
+  }
+
+  &bold {
+    font-weight: 600;
   }
 }
 
@@ -39,3 +53,7 @@ small {
 .ma-0 {
   margin: 0px !important;
 }
+
+$button-palette: (
+  primary: $primary
+);
