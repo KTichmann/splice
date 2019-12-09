@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation for Sites</title>
+    <title>Bakery Site</title>
     <link rel="stylesheet" href="css/app.css" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="grid-container hide-for-small-only" id="mid-menu-wrapper">
-        <div class="grid-x grid-padding-x align-middle">
+        <div class="grid-x grid-margin-x align-middle">
           <div class="cell small-2">
             <img src="/assets/logo.png" alt="bakeryLogo" title="Bakery Logo" />
           </div>
@@ -95,13 +95,13 @@
           <div class="grid-x">
             <div class="cell auto" id="main-menu">
               <ul class="menu cell auto expanded vertical medium-horizontal ">
-                <li><a class="caps" href="#">Food</a></li>
-                <li><a class="caps" href="#">Home</a></li>
-                <li><a class="caps" href="#">Gift</a></li>
-                <li><a class="caps" href="#">Catering</a></li>
-                <li><a class="caps" href="#">Recipies</a></li>
-                <li><a class="caps" href="#">Blog</a></li>
-                <li><a class="caps" href="#">Stories</a></li>
+                <li><a class="caps text-bold" href="#">Food</a></li>
+                <li><a class="caps text-bold" href="#">Home</a></li>
+                <li><a class="caps text-bold" href="#">Gift</a></li>
+                <li><a class="caps text-bold" href="#">Catering</a></li>
+                <li><a class="caps text-bold" href="#">Recipies</a></li>
+                <li><a class="caps text-bold" href="#">Blog</a></li>
+                <li><a class="caps text-bold" href="#">Stories</a></li>
               </ul>
             </div>
           </div>
@@ -116,8 +116,22 @@
           <div class="">
             <img src="/assets/logo.png" alt="bakeryLogo" />
           </div>
-          <div data-responsive-toggle="search-bar">
+          <div data-responsive-toggle="search-bar" id="search-bar-icon">
             <i class="fa fa-search text-white" data-toggle></i>
+          </div>
+          <div
+            class="input-group"
+            id="search-bar"
+            data-animate="hinge-in-from-top hinge-out-from-top"
+          >
+            <input
+              class="input-group-field"
+              type="text"
+              placeholder="Search products"
+            />
+            <span class="input-group-label">
+              <i class="fa fa-search text-grey"></i>
+            </span>
           </div>
         </div>
         <div
@@ -134,20 +148,6 @@
             <li><a class="caps" href="#">Blog</a></li>
             <li><a class="caps" href="#">Stories</a></li>
           </ul>
-        </div>
-        <div
-          class="input-group ma-0"
-          id="search-bar"
-          data-animate="hinge-in-from-top hinge-out-from-top"
-        >
-          <input
-            class="input-group-field"
-            type="text"
-            placeholder="Search products"
-          />
-          <span class="input-group-label">
-            <i class="fa fa-search text-grey"></i>
-          </span>
         </div>
       </div>
     </nav>
@@ -269,6 +269,7 @@
         </div>
       </div>
     </div>
+
     <div id="advert-wrapper">
       <div class="advert-item">
         <img src="assets/advert1.jpg" />
@@ -307,6 +308,38 @@
         </h2>
       </div>
     </div>
+
+    <footer class="grid-container">
+      <div class="grid-x">
+        <div class="cell auto">
+          <img src="assets/logo.png" alt="logo" />
+          <div class="grid-x ">
+            <div class="cell auto">
+              <a href="#"
+                ><img src="assets/facebook.svg" alt="facebook icon"
+              /></a>
+            </div>
+            <div class="cell auto">
+              <a href="#"><img src="assets/twitter.svg" alt="twitter icon"/></a>
+            </div>
+            <div class="cell auto">
+              <a href="#"
+                ><img src="assets/pinterest.svg" alt="pintrest icon"
+              /></a>
+            </div>
+            <div class="cell auto">
+              <a href="#"
+                ><img src="assets/instagram.svg" alt="instagram icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="cell auto">Content</div>
+        <div class="cell auto">Content</div>
+        <div class="cell auto">Content</div>
+        <div class="cell auto">Content</div>
+      </div>
+    </footer>
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>
     <script src="node_modules/foundation-sites/dist/js/foundation.js"></script>

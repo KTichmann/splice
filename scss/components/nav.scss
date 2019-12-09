@@ -1,4 +1,9 @@
 nav {
+  .fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
   #toolbar-wrapper {
     padding: 0.5rem;
 
@@ -7,10 +12,16 @@ nav {
         margin-right: 0.4rem;
       }
     }
+
+    small {
+      font-weight: 600;
+      color: $body-font-color;
+    }
   }
 
   #mid-menu-wrapper {
-    padding: 0.5rem 0px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   #mobile-menu-wrapper .top-bar {
@@ -45,15 +56,36 @@ nav {
   }
 
   #main-menu-wrapper {
-    ul li a {
-      color: $white;
+    &.fixed {
+      top: 2.5rem;
+    }
+
+    ul li {
+      &:not(:first-child) {
+        border-left: 1px solid rgba($light-grey, 0.2);
+      }
+
+      & a {
+        color: $white;
+      }
+
+      &:hover {
+        transition: all 0.3s;
+        background-color: lighten($primary, 15%);
+      }
     }
   }
 
   #search-bar {
-    position: absolute;
-    top: 29.6rem;
     z-index: 1000;
+    width: 60%;
+    position: absolute;
+    padding: 2rem 0rem;
+    margin-left: 4rem;
+
+    input {
+      max-width: 100%;
+    }
   }
 
   #mobile-menu,
