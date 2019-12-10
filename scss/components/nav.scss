@@ -2,8 +2,9 @@ nav {
   .fixed {
     position: fixed;
     width: 100%;
-    z-index: 1000;
+    z-index: 1;
   }
+
   #toolbar-wrapper {
     padding: 0.5rem;
 
@@ -20,8 +21,12 @@ nav {
   }
 
   #mid-menu-wrapper {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    p {
+      font-size: 0.875rem;
+      line-height: 1rem;
+    }
   }
 
   #mobile-menu-wrapper .top-bar {
@@ -48,7 +53,7 @@ nav {
   #mobile-menu {
     padding: 1rem 1rem;
     position: absolute;
-    z-index: 10000;
+    z-index: 10;
     ul li a {
       color: $primary;
       text-align: center;
@@ -56,6 +61,8 @@ nav {
   }
 
   #main-menu-wrapper {
+    font-size: 0.875rem;
+
     &.fixed {
       top: 2.5rem;
     }
@@ -77,7 +84,7 @@ nav {
   }
 
   #search-bar {
-    z-index: 1000;
+    z-index: 10;
     width: 60%;
     position: absolute;
     padding: 2rem 0rem;
@@ -93,9 +100,48 @@ nav {
     background-color: $light-grey;
     color: $grey;
   }
-}
 
-.menu-icon::after {
-  background: $grey !important;
-  box-shadow: 0 7px 0 $grey, 0 14px 0 $grey !important;
+  .menu-icon::after {
+    background: $grey !important;
+    box-shadow: 0 7px 0 $grey, 0 14px 0 $grey !important;
+  }
+
+  #basket-dropdown {
+    position: fixed;
+    font-size: 0.875rem;
+    z-index: 100;
+    p {
+      margin-bottom: 0.5rem;
+    }
+    .grid-x:first-child {
+      border-bottom: 1px solid #e7eaef;
+    }
+    a {
+      text-decoration: underline;
+    }
+
+    .basket-product {
+      margin-top: 1rem;
+      i {
+        margin: 0.5rem 0rem 1.5rem 1.5rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .total {
+      border-top: 1px solid #e7eaef;
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+
+      small {
+        margin-left: 0.3rem;
+      }
+    }
+    .checkout {
+      margin-top: 1rem;
+    }
+  }
 }

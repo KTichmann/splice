@@ -1,4 +1,18 @@
 footer {
+  .footer-menu-wrapper {
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  #bottom-footer-wrapper {
+    padding: 1rem;
+
+    & > div {
+      @include breakpoint(small only) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
   ul li {
     margin: 1rem 0rem;
   }
@@ -19,8 +33,13 @@ footer {
     img {
       margin-bottom: 1rem;
     }
-    .social-icon {
-      padding: 0rem 0.3rem;
+    .grid-x {
+      a {
+        padding: 0rem 0.8rem;
+        @include breakpoint(medium) {
+          padding: 0rem 0rem;
+        }
+      }
     }
   }
 

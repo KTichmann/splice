@@ -35,10 +35,8 @@
 
   @include breakpoint(medium) {
     .advert-item {
-      margin: 0 0 1rem;
-      width: 100%;
+      padding-bottom: 1rem;
       position: relative;
-      float: left;
       img {
         width: 100%;
       }

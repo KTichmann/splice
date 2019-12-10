@@ -14,6 +14,12 @@ h2 {
   font-size: 2.2rem !important;
 }
 
+@include breakpoint(small only) {
+  h2 {
+    font-size: 1.5rem !important;
+  }
+}
+
 .lined-text {
   width: auto;
   text-align: center;

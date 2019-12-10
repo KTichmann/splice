@@ -27,21 +27,32 @@
             <div class="cell medium-auto">
               <div class="grid-x align-middle">
                 <div
-                  class="cell small-6 grid-x hide-for-small-only text-center"
+                  class="cell small-7 grid-x grid-margin-x hide-for-small-only text-center"
                 >
-                  <div class="cell small-3 caps"><small>Franchise</small></div>
-                  <div class="cell small-3 caps">
-                    <small>Corporate Gifting</small>
+                  <div class="cell shrink caps">
+                    <a><small>Franchise</small></a>
                   </div>
-                  <div class="cell small-3 caps"><small>Wholesale</small></div>
-                  <div class="cell small-3 caps"><small>Contact</small></div>
+                  <div class="cell shrink caps">
+                    <a><small>Corporate Gifting</small></a>
+                  </div>
+                  <div class="cell shrink caps">
+                    <a><small>Wholesale</small></a>
+                  </div>
+                  <div class="cell shrink caps">
+                    <a><small>Contact</small></a>
+                  </div>
                 </div>
-                <div class="cell small-auto medium-6 grid-x align-right">
+                <div class="cell small-auto medium-5 grid-x align-right">
                   <div class="cell small-6 medium-3 caps">
-                    <small>Hi Jane Brown</small>
+                    <a><small>Hi Jane Brown</small></a>
                   </div>
-                  <div class="cell medium-3 small-6 caps text-right basket">
-                    <img src="assets/basket.svg" /><small>Basket 0</small>
+                  <div
+                    class="cell medium-3 small-6 caps text-right basket"
+                    data-toggle="basket-dropdown"
+                  >
+                    <img src="assets/basket.svg" alt="basket icon" /><a
+                      ><small>Basket 1</small></a
+                    >
                   </div>
                 </div>
               </div>
@@ -49,14 +60,43 @@
           </div>
         </div>
       </div>
+      <div class="dropdown-pane" id="basket-dropdown" data-dropdown>
+        <div class="grid-x text-bold">
+          <p class="cell auto caps">MY CART</p>
+          <a class="cell auto text-right text-primary">View cart</a>
+        </div>
+        <div class="grid-x grid-margin-x basket-product" id="berry-product">
+          <div class="cell small-3">
+            <img src="assets/product1.jpg" />
+          </div>
+          <div class="cell auto">
+            <small class="text-bold">Berry & Balsamic Bon Bons</small><br />
+            <small>Qty: <span class="qty">1</span></small>
+          </div>
+          <div class="cell small-3">
+            <i
+              class="fa fa-close text-grey delete-product"
+              data-value="berry"
+            ></i>
+            <small>R36.00</small>
+          </div>
+        </div>
+        <div class="total grid-x align-justify">
+          <p class="cell shrink">
+            <span class="text-bold">Subtotal</span><small>(1 item)</small>
+          </p>
+          <p class="cell shrink">R36.00</p>
+        </div>
+        <button class="primary button checkout expanded">Checkout</button>
+      </div>
       <div class="grid-container hide-for-small-only" id="mid-menu-wrapper">
         <div class="grid-x grid-margin-x align-middle">
           <div class="cell small-2">
             <a href="#"
-              ><img src="/assets/logo.png" alt="bakeryLogo" title="Bakery Logo"
+              ><img src="/assets/logo.png" alt="bakery logo" title="Bakery Logo"
             /></a>
           </div>
-          <div class="cell small-4">
+          <div class="cell small-5">
             <div class="input-group ma-0">
               <input
                 class="input-group-field"
@@ -68,24 +108,24 @@
               </span>
             </div>
           </div>
-          <div class="cell small-3">
+          <div class="cell auto">
             <div class="grid-x align-middle">
               <div class="cell small-3">
                 <img src="/assets/delivery.svg" alt="delivery van" />
               </div>
               <div class="cell small-9">
-                <p class="caps ma-0">Free Delivery</p>
+                <p class="caps ma-0 text-bold">Free Delivery</p>
                 <p class="ma-0"><small>On orders over R500</small></p>
               </div>
             </div>
           </div>
-          <div class="cell small-3">
+          <div class="cell auto">
             <div class="grid-x align-middle">
               <div class="cell small-3">
                 <img src="/assets/call.svg" alt="delivery van" />
               </div>
               <div class="cell small-9">
-                <p class="caps ma-0">021 886 6179</p>
+                <p class="caps ma-0 text-bold">021 886 6179</p>
                 <p class="ma-0"><small>Mon - Fri, 8am - 4pm</small></p>
               </div>
             </div>
@@ -116,7 +156,7 @@
             <button class="menu-icon" type="button" data-toggle></button>
           </div>
           <div class="">
-            <img src="/assets/logo.png" alt="bakeryLogo" />
+            <img src="/assets/logo.png" alt="bakery logo" />
           </div>
           <div data-responsive-toggle="search-bar" id="search-bar-icon">
             <i class="fa fa-search text-white" data-toggle></i>
@@ -165,18 +205,18 @@
           <div class="orbit-controls">
             <button class="orbit-previous">
               <span class="show-for-sr">Previous Slide</span>
-              <img src="assets/arrowLeft.svg" />
+              <img src="assets/arrowLeft.svg" alt="left arrow" />
             </button>
             <button class="orbit-next">
               <span class="show-for-sr">Next Slide</span>
-              <img src="assets/arrowRight.svg" />
+              <img src="assets/arrowRight.svg" alt="right arrow" />
             </button>
           </div>
           <ul class="orbit-container">
             <li class="is-active orbit-slide">
               <figure class="orbit-figure">
                 <div class="carousel-card">
-                  <p class="caps lined-text text-font-light">
+                  <p class="caps lined-text text-font-light text-bold">
                     <span>Treat Yourself To</span>
                   </p>
                   <h2 class="caps text-primary">Local pantry favourites</h2>
@@ -191,7 +231,7 @@
                 <img
                   class="orbit-image"
                   src="assets/headerImage.jpg"
-                  alt="Space"
+                  alt="Jam jars and fruit"
                 />
               </figure>
             </li>
@@ -218,13 +258,16 @@
           <p class="product-description text-dark-grey text-bold">
             Berry & Balsamic Bon Bons
           </p>
-          <button class="caps button primary hollow text-bold">
+          <button
+            value="berry"
+            class="caps button primary hollow text-bold add-to-cart"
+          >
             Add to cart
           </button>
         </div>
         <div class="product cell medium-6 large-3">
           <div class="product-img-wrapper">
-            <img src="assets/product2.jpg" alt="berry & balsamic bon bons" />
+            <img src="assets/product2.jpg" alt="sundried tomatoes jar" />
             <span class="product-price bg-primary text-light-grey">R72.00</span>
           </div>
           <p class="caps product-title text-bold text-font-light">
@@ -233,13 +276,16 @@
           <p class="product-description text-dark-grey text-bold">
             Sundried Tomatoes, Feta & Bell Peppers
           </p>
-          <button class="caps button primary hollow text-bold">
+          <button
+            value="sundried"
+            class="caps button primary hollow text-bold add-to-cart"
+          >
             Add to cart
           </button>
         </div>
         <div class="product cell medium-6 large-3">
           <div class="product-img-wrapper">
-            <img src="assets/product3.jpg" alt="berry & balsamic bon bons" />
+            <img src="assets/product3.jpg" alt="vegetable crisps" />
             <span class="product-price bg-primary text-light-grey">R22.00</span>
           </div>
           <p class="caps product-title text-bold text-font-light">
@@ -248,13 +294,16 @@
           <p class="product-description text-dark-grey text-bold">
             Vegetable Crisps
           </p>
-          <button class="caps button primary hollow text-bold">
+          <button
+            value="veg"
+            class="caps button primary hollow text-bold add-to-cart"
+          >
             Add to cart
           </button>
         </div>
         <div class="product cell medium-6 large-3">
           <div class="product-img-wrapper">
-            <img src="assets/product4.jpg" alt="berry & balsamic bon bons" />
+            <img src="assets/product4.jpg" alt="giftbasket" />
             <span class="product-price bg-primary text-light-grey"
               >R292.00</span
             >
@@ -265,7 +314,10 @@
           <p class="product-description text-dark-grey text-bold">
             Melissa’s Family man
           </p>
-          <button class="caps button primary hollow text-bold">
+          <button
+            value="man"
+            class="caps button primary hollow text-bold add-to-cart"
+          >
             Add to cart
           </button>
         </div>
@@ -274,13 +326,13 @@
 
     <div id="advert-wrapper">
       <div class="advert-item">
-        <img src="assets/advert1.jpg" />
+        <img src="assets/advert1.jpg" alt="teatime treat" />
         <h2 class="caps bottom-right advert-content">
           YOUR PERFECT TEATIME TREAT
         </h2>
       </div>
       <div class="advert-item">
-        <img src="assets/advert3.jpg" />
+        <img src="assets/advert3.jpg" alt="gift basket" />
         <div class="advert-content text-center middle-right thin">
           <h2 class="caps text-primary">GIFTING MADE EASY</h2>
           <p class="text-grey">
@@ -290,20 +342,20 @@
             Shop Hampers
           </button>
           <div class="gifting">
-            <img src="assets/gifting.svg" />
+            <img src="assets/gifting.svg" alt="giftbag icon" />
             <a class="text-dark-grey text-bold">Corporate gifting</a>
           </div>
         </div>
       </div>
       <div class="advert-item">
-        <img src="assets/advert2.jpg" />
+        <img src="assets/advert2.jpg" alt="cermic mugs" />
         <h2 class="caps advert-content top-left">
           <span class="text-bold text-body">KITCHEN ESSENTIAL</span>
           CERAMIC MUGS
         </h2>
       </div>
       <div class="advert-item">
-        <img src="assets/advert4.jpg" />
+        <img src="assets/advert4.jpg" alt="winter warmers" />
         <h2 class="caps advert-content bottom-left">
           <span class="text-bold text-body">COMFORTING</span><br />
           WINTER WARMERS
@@ -312,24 +364,24 @@
     </div>
 
     <footer class="grid-container fluid">
-      <div class="grid-x">
+      <div class="grid-x footer-menu-wrapper">
         <div class="cell medium-auto social-container">
           <img src="assets/logo.png" alt="logo" />
-          <div class="grid-x grid-margin-x">
-            <div class="cell auto">
+          <div class="grid-x">
+            <div class="cell shrink">
               <a href="#"
                 ><img src="assets/facebook.svg" alt="facebook icon"
               /></a>
             </div>
-            <div class="cell auto">
+            <div class="cell shrink">
               <a href="#"><img src="assets/twitter.svg" alt="twitter icon"/></a>
             </div>
-            <div class="cell auto">
+            <div class="cell shrink">
               <a href="#"
                 ><img src="assets/pinterest.svg" alt="pintrest icon"
               /></a>
             </div>
-            <div class="cell auto">
+            <div class="cell shrink">
               <a href="#"
                 ><img src="assets/instagram.svg" alt="instagram icon"
               /></a>
@@ -394,30 +446,59 @@
           <ul class="no-bullet">
             <li>
               <a href="#" class="text-grey"
-                ><img src="assets/call-small.svg" />
+                ><img src="assets/call-small.svg" alt="phone icon" />
                 <small>+27 21 888 2999</small></a
               >
             </li>
             <li>
               <a href="#" class="text-grey"
-                ><img src="assets/email.svg" /><small
+                ><img src="assets/email.svg" alt="email icon" /><small
                   >info@bakery.co.za</small
                 ></a
               >
             </li>
             <li>
               <a href="#" class="text-grey"
-                ><img src="assets/locator.svg" /><small>Store Locator</small></a
+                ><img src="assets/locator.svg" alt="locator pin icon" /><small
+                  >Store Locator</small
+                ></a
               >
             </li>
             <li>
               <a href="#" class="text-grey"
-                ><img src="assets/franchise.svg" /><small
+                ><img src="assets/franchise.svg" alt="business icon" /><small
                   >Franchise Enquiry</small
                 ></a
               >
             </li>
           </ul>
+        </div>
+      </div>
+      <div id="bottom-footer-wrapper" class="grid-x text-font-light">
+        <div
+          class="grid-x grid-margin-x cell medium-6 align-left-medium align-center"
+        >
+          <div class="cell shrink">
+            <small>© Bakery - All rights reserved.</small>
+          </div>
+          <div class="cell shrink"><small>Terms & Conditions</small></div>
+          <div class="cell shrink"><small>Privacy Policy</small></div>
+        </div>
+        <div
+          class="grid-x grid-margin-x cell medium-6 align-right-medium align-center"
+        >
+          <div class="cell shrink">
+            <img src="assets/fastway.jpg" alt="fastway logo" />
+          </div>
+          <div class="cell shrink">
+            <img src="assets/payu.jpg" alt="payu logo" />
+          </div>
+          <div class="cell shrink">
+            <img src="assets/visa.jpg" alt="visa logo" />
+          </div>
+          <div class="cell shrink">
+            <img src="assets/mastercard.jpg" alt="mastercard logo" />
+          </div>
         </div>
       </div>
     </footer>
