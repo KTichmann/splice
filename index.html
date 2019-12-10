@@ -51,7 +51,7 @@
                     data-toggle="basket-dropdown"
                   >
                     <img src="assets/basket.svg" alt="basket icon" /><a
-                      ><small>Basket 1</small></a
+                      ><small>Basket <span class="total-count">0</span></small></a
                     >
                   </div>
                 </div>
@@ -65,13 +65,13 @@
           <p class="cell auto caps">MY CART</p>
           <a class="cell auto text-right text-primary">View cart</a>
         </div>
-        <div class="grid-x grid-margin-x basket-product" id="berry-product">
+        <div class="grid-x grid-margin-x basket-product hidden" id="berry-product">
           <div class="cell small-3">
             <img src="assets/product1.jpg" />
           </div>
           <div class="cell auto">
             <small class="text-bold">Berry & Balsamic Bon Bons</small><br />
-            <small>Qty: <span class="qty">1</span></small>
+            <small>Qty: <span class="qty">0</span></small>
           </div>
           <div class="cell small-3">
             <i
@@ -81,11 +81,59 @@
             <small>R36.00</small>
           </div>
         </div>
+        <div class="grid-x grid-margin-x basket-product hidden" id="sundried-product">
+          <div class="cell small-3">
+            <img src="assets/product2.jpg" />
+          </div>
+          <div class="cell auto">
+            <small class="text-bold">Sundried Tomatoes, Feta...</small><br />
+            <small>Qty: <span class="qty">0</span></small>
+          </div>
+          <div class="cell small-3">
+            <i
+              class="fa fa-close text-grey delete-product"
+              data-value="sundried"
+            ></i>
+            <small>R72.00</small>
+          </div>
+        </div>
+        <div class="grid-x grid-margin-x basket-product hidden" id="veg-product">
+          <div class="cell small-3">
+            <img src="assets/product3.jpg" />
+          </div>
+          <div class="cell auto">
+            <small class="text-bold">Vegetable Crisps</small><br />
+            <small>Qty: <span class="qty">0</span></small>
+          </div>
+          <div class="cell small-3">
+            <i
+              class="fa fa-close text-grey delete-product"
+              data-value="veg"
+            ></i>
+            <small>R22.00</small>
+          </div>
+        </div>
+        <div class="grid-x grid-margin-x basket-product hidden" id="man-product">
+          <div class="cell small-3">
+            <img src="assets/product4.jpg" />
+          </div>
+          <div class="cell auto">
+            <small class="text-bold">Melissa’s Family man</small><br />
+            <small>Qty: <span class="qty">0</span></small>
+          </div>
+          <div class="cell small-3">
+            <i
+              class="fa fa-close text-grey delete-product"
+              data-value="man"
+            ></i>
+            <small>R292.00</small>
+          </div>
+        </div>
         <div class="total grid-x align-justify">
           <p class="cell shrink">
-            <span class="text-bold">Subtotal</span><small>(1 item)</small>
+            <span class="text-bold">Subtotal</span><small>(<span class="total-count">0</span> items)</small>
           </p>
-          <p class="cell shrink">R36.00</p>
+          <p class="cell shrink">R<span class="total-amount">00.00</span></p>
         </div>
         <button class="primary button checkout expanded">Checkout</button>
       </div>
