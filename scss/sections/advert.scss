@@ -78,10 +78,4 @@
   @include breakpoint(medium down) {
     column-count: 1;
   }
-  // @include breakpoint(small only) {
-  //   .advert-content {
-  //     position: relative !important;
-  //     width: 13rem !important;
-  //   }
-  // }
 }
