@@ -1,36 +1,6 @@
 $button-padding: 1rem 2rem;
 $button-radius: 80px;
 
-small {
-  font-size: 0.75rem !important;
-}
-
-.text- {
-  &primary {
-    color: $primary;
-  }
-
-  &grey {
-    color: $grey;
-  }
-
-  &light-grey {
-    color: $light-grey;
-  }
-
-  &dark-grey {
-    color: $dark-grey;
-  }
-
-  &font-light {
-    color: $font-light;
-  }
-
-  &bold {
-    font-weight: 600;
-  }
-}
-
 .bg- {
   &primary {
     background-color: $primary;
@@ -43,10 +13,10 @@ small {
   &light-grey {
     background-color: $light-grey;
   }
-}
 
-.caps {
-  text-transform: uppercase;
+  &white {
+    background-color: $white;
+  }
 }
 
 .ma-0 {

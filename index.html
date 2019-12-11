@@ -21,7 +21,7 @@
   </head>
   <body>
     <nav>
-      <div class="bg-light-grey" id="toolbar-wrapper">
+      <div class="bg-light-grey text-bold" id="toolbar-wrapper">
         <div class="grid-container">
           <div class="grid-x align-middle bg-light-grey">
             <div class="cell medium-auto">
@@ -51,7 +51,9 @@
                     data-toggle="basket-dropdown"
                   >
                     <img src="assets/basket.svg" alt="basket icon" /><a
-                      ><small>Basket <span class="total-count">0</span></small></a
+                      ><small
+                        >Basket <span class="total-count">0</span></small
+                      ></a
                     >
                   </div>
                 </div>
@@ -61,11 +63,14 @@
         </div>
       </div>
       <div class="dropdown-pane" id="basket-dropdown" data-dropdown>
-        <div class="grid-x text-bold">
+        <div class="grid-x text-bold text-smaller">
           <p class="cell auto caps">MY CART</p>
           <a class="cell auto text-right text-primary">View cart</a>
         </div>
-        <div class="grid-x grid-margin-x basket-product hidden" id="berry-product">
+        <div
+          class="grid-x grid-margin-x basket-product hidden text-smaller"
+          id="berry-product"
+        >
           <div class="cell small-3">
             <img src="assets/product1.jpg" />
           </div>
@@ -81,7 +86,10 @@
             <small>R36.00</small>
           </div>
         </div>
-        <div class="grid-x grid-margin-x basket-product hidden" id="sundried-product">
+        <div
+          class="grid-x grid-margin-x basket-product hidden text-smaller"
+          id="sundried-product"
+        >
           <div class="cell small-3">
             <img src="assets/product2.jpg" />
           </div>
@@ -97,7 +105,10 @@
             <small>R72.00</small>
           </div>
         </div>
-        <div class="grid-x grid-margin-x basket-product hidden" id="veg-product">
+        <div
+          class="grid-x grid-margin-x basket-product hidden text-smaller"
+          id="veg-product"
+        >
           <div class="cell small-3">
             <img src="assets/product3.jpg" />
           </div>
@@ -113,7 +124,10 @@
             <small>R22.00</small>
           </div>
         </div>
-        <div class="grid-x grid-margin-x basket-product hidden" id="man-product">
+        <div
+          class="grid-x grid-margin-x basket-product hidden text-smaller"
+          id="man-product"
+        >
           <div class="cell small-3">
             <img src="assets/product4.jpg" />
           </div>
@@ -129,15 +143,19 @@
             <small>R292.00</small>
           </div>
         </div>
-        <div class="total grid-x align-justify">
+        <div class="total grid-x align-justify text-smaller">
           <p class="cell shrink">
-            <span class="text-bold">Subtotal</span><small>(<span class="total-count">0</span> items)</small>
+            <span class="text-bold">Subtotal</span
+            ><small>(<span class="total-count">0</span> items)</small>
           </p>
           <p class="cell shrink">R<span class="total-amount">00.00</span></p>
         </div>
         <button class="primary button checkout expanded">Checkout</button>
       </div>
-      <div class="grid-container hide-for-small-only" id="mid-menu-wrapper">
+      <div
+        class="grid-container hide-for-small-only text-smaller"
+        id="mid-menu-wrapper"
+      >
         <div class="grid-x grid-margin-x align-middle">
           <div class="cell small-2">
             <a href="#"
@@ -180,11 +198,14 @@
           </div>
         </div>
       </div>
-      <div id="main-menu-wrapper" class="hide-for-small-only bg-primary">
+      <div
+        id="main-menu-wrapper"
+        class="hide-for-small-only bg-primary text-smaller"
+      >
         <div class="grid-container text-center">
           <div class="grid-x">
             <div class="cell auto" id="main-menu">
-              <ul class="menu cell auto expanded vertical medium-horizontal ">
+              <ul class="menu cell auto expanded vertical medium-horizontal">
                 <li><a class="caps text-bold" href="#">Food</a></li>
                 <li><a class="caps text-bold" href="#">Home</a></li>
                 <li><a class="caps text-bold" href="#">Gift</a></li>
@@ -263,11 +284,11 @@
           <ul class="orbit-container">
             <li class="is-active orbit-slide">
               <figure class="orbit-figure">
-                <div class="carousel-card">
+                <div class="carousel-card bg-white">
                   <p class="caps lined-text text-font-light text-bold">
                     <span>Treat Yourself To</span>
                   </p>
-                  <h2 class="caps text-primary">Local pantry favourites</h2>
+                  <h2 class="caps text-primary">Local Pantry Favourites</h2>
                   <p class="text-center">
                     Buy two jams and get a third <span class="caps">free</span>
                     <small>(T&C's apply)</small>
@@ -298,12 +319,15 @@
         <div class="product cell medium-6 large-3">
           <div class="product-img-wrapper">
             <img src="assets/product1.jpg" alt="berry & balsamic bon bons" />
-            <span class="product-price bg-primary text-light-grey">R36.00</span>
+            <span
+              class="product-price bg-primary text-light-grey text-smaller text-bold"
+              >R36.00</span
+            >
           </div>
           <p class="caps product-title text-bold text-font-light">
-            Sweets, nuts & chocolates
+            <small>Sweets, nuts & chocolates</small>
           </p>
-          <p class="product-description text-dark-grey text-bold">
+          <p class="product-description text-dark-grey text-bold text-smaller">
             Berry & Balsamic Bon Bons
           </p>
           <button
@@ -316,12 +340,15 @@
         <div class="product cell medium-6 large-3">
           <div class="product-img-wrapper">
             <img src="assets/product2.jpg" alt="sundried tomatoes jar" />
-            <span class="product-price bg-primary text-light-grey">R72.00</span>
+            <span
+              class="product-price bg-primary text-light-grey text-smaller text-bold"
+              >R72.00</span
+            >
           </div>
           <p class="caps product-title text-bold text-font-light">
-            PASTA SAUCES & CONDIMENTS
+            <small>PASTA SAUCES & CONDIMENTS</small>
           </p>
-          <p class="product-description text-dark-grey text-bold">
+          <p class="product-description text-dark-grey text-bold text-smaller">
             Sundried Tomatoes, Feta & Bell Peppers
           </p>
           <button
@@ -334,12 +361,15 @@
         <div class="product cell medium-6 large-3">
           <div class="product-img-wrapper">
             <img src="assets/product3.jpg" alt="vegetable crisps" />
-            <span class="product-price bg-primary text-light-grey">R22.00</span>
+            <span
+              class="product-price bg-primary text-light-grey text-smaller text-bold"
+              >R22.00</span
+            >
           </div>
           <p class="caps product-title text-bold text-font-light">
-            SAVOURY SNACKS
+            <small>SAVOURY SNACKS</small>
           </p>
-          <p class="product-description text-dark-grey text-bold">
+          <p class="product-description text-dark-grey text-bold text-smaller">
             Vegetable Crisps
           </p>
           <button
@@ -352,14 +382,15 @@
         <div class="product cell medium-6 large-3">
           <div class="product-img-wrapper">
             <img src="assets/product4.jpg" alt="giftbasket" />
-            <span class="product-price bg-primary text-light-grey"
+            <span
+              class="product-price bg-primary text-light-grey text-smaller text-bold"
               >R292.00</span
             >
           </div>
           <p class="caps product-title text-bold text-font-light">
-            HAMPERS
+            <small>HAMPERS</small>
           </p>
-          <p class="product-description text-dark-grey text-bold">
+          <p class="product-description text-dark-grey text-bold text-smaller">
             Melissa’s Family man
           </p>
           <button
@@ -372,7 +403,7 @@
       </div>
     </div>
 
-    <div id="advert-wrapper">
+    <div id="advert-wrapper" class="text-white">
       <div class="advert-item">
         <img src="assets/advert1.jpg" alt="teatime treat" />
         <h2 class="caps bottom-right advert-content">
@@ -383,7 +414,7 @@
         <img src="assets/advert3.jpg" alt="gift basket" />
         <div class="advert-content text-center middle-right thin">
           <h2 class="caps text-primary">GIFTING MADE EASY</h2>
-          <p class="text-grey">
+          <p class="text-grey text-smaller">
             Beautiful product combinations to suit every occasion and budget.
           </p>
           <button type="button" class="button primary caps">
@@ -391,7 +422,9 @@
           </button>
           <div class="gifting">
             <img src="assets/gifting.svg" alt="giftbag icon" />
-            <a class="text-dark-grey text-bold">Corporate gifting</a>
+            <a class="text-dark-grey text-bold text-smaller"
+              >Corporate gifting</a
+            >
           </div>
         </div>
       </div>

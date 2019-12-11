@@ -23,12 +23,9 @@
           position: absolute;
           bottom: 0px;
           right: 0rem;
-          font-size: 0.875rem;
-          font-weight: 600;
         }
       }
       .product-title {
-        font-size: 0.75rem;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
       }
@@ -36,11 +33,9 @@
       .product-description {
         min-height: 2.75rem;
         max-width: 13rem;
-        font-size: 0.875rem;
       }
 
       .button {
-        font-size: 14px;
         margin-top: 0.75rem;
         &:hover {
           background-color: $primary;

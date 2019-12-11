@@ -8,6 +8,37 @@ $header-font-family: "Average";
   &header {
     font-family: $header-font-family;
   }
+  &primary {
+    color: $primary;
+  }
+
+  &grey {
+    color: $grey;
+  }
+
+  &light-grey {
+    color: $light-grey;
+  }
+
+  &dark-grey {
+    color: $dark-grey;
+  }
+
+  &font-light {
+    color: $font-light;
+  }
+
+  &white {
+    color: $white;
+  }
+
+  &bold {
+    font-weight: 600;
+  }
+
+  &smaller {
+    font-size: 0.875rem;
+  }
 }
 
 h2 {
@@ -20,15 +51,23 @@ h2 {
   }
 }
 
+small {
+  font-size: 0.75rem !important;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
 .lined-text {
   width: auto;
   text-align: center;
   border-bottom: 1px solid $font-light;
   line-height: 0.1em;
   margin: 1rem 0;
-}
 
-.lined-text span {
-  background: #fff;
-  padding: 0 1rem;
+  span {
+    background: #fff;
+    padding: 0 1rem;
+  }
 }

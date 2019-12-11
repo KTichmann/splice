@@ -3,15 +3,7 @@
   column-gap: 1rem;
 
   .advert-item {
-    p,
-    a {
-      font-size: 0.875rem;
-    }
-
     .gifting {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       margin-top: 0.5rem;
       img {
         width: 1rem;
@@ -26,15 +18,11 @@
       .advert-content {
         margin: 2rem 0rem;
         text-align: center;
-      }
-      h2 {
-        font-size: 1.5rem !important;
+        color: $primary;
       }
     }
-  }
 
-  @include breakpoint(medium) {
-    .advert-item {
+    @include breakpoint(medium) {
       padding-bottom: 1rem;
       position: relative;
       img {
@@ -45,7 +33,6 @@
       }
       .advert-content {
         position: absolute;
-        color: $white;
         width: 25rem;
 
         .text-body {
@@ -75,6 +62,7 @@
       }
     }
   }
+
   @include breakpoint(medium down) {
     column-count: 1;
   }
